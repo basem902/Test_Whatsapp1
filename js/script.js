@@ -21,7 +21,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
 رقم الجوال: ${phone}`;
 
     // استخدام الرابط المباشر للواتساب
-    const whatsappLink = `https://wa.me/966558048004?text=${encodeURIComponent(message)}`;
+    const whatsappLink = `https://wa.me/+966558048004?text=${encodeURIComponent(message)}`;
     
     // فتح الرابط في نفس النافذة
     window.location.href = whatsappLink;
