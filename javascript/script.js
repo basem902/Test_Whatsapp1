@@ -17,12 +17,9 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     }
 
     // تجهيز رابط الواتساب
-    const message = `الاسم: ${name}
-رقم الجوال: ${phone}`;
-
-    // استخدام الرابط المباشر للواتساب
+    const message = `الاسم: ${name}\nرقم الجوال: ${phone}`;
     const whatsappLink = `https://wa.me/966558048004?text=${encodeURIComponent(message)}`;
     
-    // فتح الرابط في نفس النافذة
-    window.location.href = whatsappLink;
+    // فتح الرابط
+    window.open(whatsappLink, '_blank'); // فتح الرابط في نافذة جديدة
 });
